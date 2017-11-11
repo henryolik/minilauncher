@@ -107,13 +107,15 @@ Public Class launcher_main
             os = "7"
         End If
         If osVer.Major = 6 And osVer.Minor = 2 Then
-            os = "8"
-        End If
-        If osVer.Major = 6 And osVer.Minor = 3 Then
-            os = "8.1"
-        End If
-        If My.Computer.Info.OSFullName.Contains("10") Then
-            os = "10"
+            If My.Computer.Info.OSFullName.Contains("10") Then
+                os = "10"
+            Else
+                If My.Computer.Info.OSFullName.Contains("8.1") Then
+                    os = "8.1"
+                Else
+                    os = "8"
+                End If
+            End If
         End If
         If Not os = Nothing Then
             Dim msg As String = Application.StartupPath & "/msg.txt"
