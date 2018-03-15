@@ -74,7 +74,7 @@ Partial Class launcher_main
         Me.WebBrowser1.ScriptErrorsSuppressed = True
         Me.WebBrowser1.Size = New System.Drawing.Size(590, 242)
         Me.WebBrowser1.TabIndex = 7
-        Me.WebBrowser1.Url = New System.Uri("https://update.ministudios.ml", System.UriKind.Absolute)
+        Me.WebBrowser1.Url = New System.Uri("https://update.henryolik.ga", System.UriKind.Absolute)
         '
         'launcher_main
         '
@@ -91,7 +91,7 @@ Partial Class launcher_main
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MaximizeBox = False
         Me.Name = "launcher_main"
-        Me.Text = "Míní Launcher v1.4.1"
+        Me.Text = "Míní Launcher v1.4.1.1"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)

@@ -12,9 +12,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Míní Launcher")> 
 <Assembly: AssemblyDescription("Spouštěč hry Míní")> 
-<Assembly: AssemblyCompany("Míní Studios corp.")> 
+<Assembly: AssemblyCompany("henryolik")> 
 <Assembly: AssemblyProduct("Míní Launcher")> 
-<Assembly: AssemblyCopyright("Copyright ©  2015 - 2017")> 
+<Assembly: AssemblyCopyright("© henryolik 2015 - 2018")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)> 
@@ -33,7 +33,7 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.11.0.1")> 
-<Assembly: AssemblyFileVersion("1.11.0.1")> 
+<Assembly: AssemblyVersion("1.12.0.1")> 
+<Assembly: AssemblyFileVersion("1.12.0.1")> 
 
 <Assembly: NeutralResourcesLanguageAttribute("cs")> 

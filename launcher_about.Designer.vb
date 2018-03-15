@@ -37,9 +37,9 @@ Partial Class launcher_about
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(332, 25)
+        Me.Label1.Size = New System.Drawing.Size(350, 25)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Verze Launcheru: 1.4.1 (build 11)"
+        Me.Label1.Text = "Verze Launcheru: 1.4.1.1 (build 12)"
         '
         'Label2
         '
@@ -65,36 +65,36 @@ Partial Class launcher_about
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label4.Location = New System.Drawing.Point(9, 136)
+        Me.Label4.Location = New System.Drawing.Point(9, 115)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(284, 20)
+        Me.Label4.Size = New System.Drawing.Size(142, 20)
         Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Vyrobily Míní Studios Corp. 2015 - 2017"
+        Me.Label4.Text = "henryolik 2015 - 18"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label5.Location = New System.Drawing.Point(179, 167)
+        Me.Label5.Location = New System.Drawing.Point(191, 141)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(205, 24)
+        Me.Label5.Size = New System.Drawing.Size(186, 24)
         Me.Label5.TabIndex = 5
-        Me.Label5.Text = "https://ministudios.ml"
+        Me.Label5.Text = "https://henryolik.ga"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(10, 177)
+        Me.Label6.Location = New System.Drawing.Point(10, 152)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 6
-        Me.Label6.Text = "v1.11.0.1"
+        Me.Label6.Text = "v1.12.0.1"
         '
         'launcher_about
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(389, 194)
+        Me.ClientSize = New System.Drawing.Size(389, 169)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)

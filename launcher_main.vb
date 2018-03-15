@@ -24,7 +24,7 @@ Public Class launcher_main
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         Dim osVer As Version = Environment.OSVersion.Version
         If osVer.Major = 5 And osVer.Minor = 1 Then
-            MsgBox("Windows XP již není podporován! Stáhněte si, prosím Míní Elder Launcher na https://ministudios.ml/ke-stazeni", MsgBoxStyle.Critical, "Operační systém není podporován")
+            MsgBox("Windows XP již není podporován! Stáhněte si, prosím Míní Elder Launcher na https://henryolik.ga", MsgBoxStyle.Critical, "Operační systém není podporován")
             Me.Close()
         End If
         Me.Show()
@@ -46,7 +46,7 @@ Public Class launcher_main
         End If
         Dim wc As WebClient = New WebClient()
         If IsConnectionAvailable() = True Then
-            wc.DownloadFile("https://dl.ministudios.ml/mini/launcher/version.txt", version)
+            wc.DownloadFile("https://dl.henryolik.ga/mini/launcher/version.txt", version)
         End If
         Dim LastVer As String = My.Computer.FileSystem.ReadAllText(version)
         If Not MyVer = LastVer Then
@@ -56,7 +56,7 @@ Public Class launcher_main
                     My.Computer.FileSystem.DeleteFile(updater)
                 End If
                 If IsConnectionAvailable() = True Then
-                    wc.DownloadFile("https://dl.ministudios.ml/updater/updater.exe", updater)
+                    wc.DownloadFile("https://dl.henryolik.ga/updater/updater.exe", updater)
                 End If
                 Process.Start(Application.StartupPath & "/updater.exe", "-launcher")
                 Me.Close()
@@ -65,7 +65,7 @@ Public Class launcher_main
     End Sub
 
     Public Function IsConnectionAvailable() As Boolean
-        Dim objUrl As New System.Uri("https://dl.ministudios.ml/status.txt")
+        Dim objUrl As New System.Uri("https://dl.henryolik.ga/status.txt")
         Dim objWebReq As System.Net.WebRequest
         objWebReq = System.Net.WebRequest.Create(objUrl)
         Dim objResp As System.Net.WebResponse
@@ -81,7 +81,7 @@ Public Class launcher_main
     End Function
 
     Public Function update_internet() As Boolean
-        Dim objUrl As New System.Uri("https://update.ministudios.ml")
+        Dim objUrl As New System.Uri("https://update.henryolik.ga")
         Dim objWebReq As System.Net.WebRequest
         objWebReq = System.Net.WebRequest.Create(objUrl)
         Dim objResp As System.Net.WebResponse
@@ -119,7 +119,7 @@ Public Class launcher_main
         End If
         If Not os = Nothing Then
             Dim msg As String = Application.StartupPath & "/msg.txt"
-            wc.DownloadFile(New Uri("https://dl.ministudios.ml/mini/launcher/msgs/" & MyVer & "/" & os & "msg.txt"), msg)
+            wc.DownloadFile(New Uri("https://dl.henryolik.ga/mini/launcher/msgs/" & MyVer & "/" & os & "msg.txt"), msg)
             If Not My.Computer.FileSystem.ReadAllText(msg) = "" Then
                 MsgBox(My.Computer.FileSystem.ReadAllText(msg), MsgBoxStyle.Information, "Oznámení")
             End If
